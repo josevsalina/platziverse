@@ -1,0 +1,11 @@
+{
+  "name": "platziver-db",
+  "version": "1.0.0",
+  "description": "Curso de Nodejs Avanzado de Platzi, IOT real time app",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard"
+  },
+  "author": "Jose Valentin Salina <josevalentinsp@gmail.com>",
+  "license": "MIT"
+}
