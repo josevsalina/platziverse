@@ -10,4 +10,9 @@ setupDatabase(config).then(db => {
 }).catch( err => console.log(err))
 ```
 
-utilizar npm i --save-dev standard
+## Create Database
+```sql
+CREATE ROLE desarrollador WITH LOGIN PASSWORD '1234560';
+CREATE DATABASE platziverse;
+GRANT ALL PRIVILEGES ON DATABASE platziverse TO desarrollador;
+```
