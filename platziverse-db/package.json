@@ -1,0 +1,28 @@
+{
+  "name": "platziver-db",
+  "version": "1.0.0",
+  "description": "Curso de Nodejs Avanzado de Platzi, IOT real time app",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "setup": "set DEBUG=platziverse:* & node setup.js",
+    "test": "set DEBUG=platziverse:* & nyc --reporter=lcov ava tests/ --verbose"
+  },
+  "author": "Jose Valentin Salina <josevalentinsp@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^3.1.0",
+    "defaults": "^1.0.3",
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.38.0"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "nyc": "^13.0.1",
+    "proxyquire": "^2.1.0",
+    "sinon": "^6.3.1",
+    "sqlite3": "^4.0.2",
+    "standard": "^12.0.1"
+  }
+}
