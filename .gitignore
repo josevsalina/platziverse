@@ -1,8 +1,8 @@
 
 package-lock\.json
 
-platziver-db/\.nyc_output/
+platziverse-db/\.nyc_output/
 
-platziver-db/node_modules/
+platziverse-db/node_modules/
 
-platziver-db/coverage/
+platziverse-db/coverage/
