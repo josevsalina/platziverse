@@ -1,0 +1,25 @@
+{
+  "name": "platziverse-mqtt",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A simple IOT platform -- MQTT server",
+  "main": "server.js",
+  "scripts": {
+    "start": "set NODE_ENV=production & node server.js",
+    "start:dev": "set DEBUG=platziverse:* & nodemon server.js",
+    "lint": "standard"
+  },
+  "author": "Jose Valentin Salina <josevalentinsp@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.18.4",
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "debug": "^4.0.1",
+    "mosca": "^2.8.3",
+    "platziverse-db": "file:./../platziverse-db",
+    "redis": "^2.8.0"
+  }
+}

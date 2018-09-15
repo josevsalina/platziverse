@@ -6,3 +6,9 @@ platziverse-db/\.nyc_output/
 platziverse-db/node_modules/
 
 platziverse-db/coverage/
+
+platziverse-mqtt/\.nyc_output/
+
+platziverse-mqtt/node_modules/
+
+platziverse-mqtt/coverage/

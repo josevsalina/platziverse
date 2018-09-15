@@ -1,8 +1,9 @@
 'use strict'
 
-const debug = require('debug')('platziverse:db:setup')
+const debug = require('debug')('platziverse-db:setup')
 const inquirer = require('inquirer')
 const chalk = require('chalk')
+const config = require('./config-db')()
 const db = require('./')
 
 const prompt = inquirer.createPromptModule()
@@ -19,15 +20,7 @@ async function setup () {
   if (!answer.setup) {
     return console.log('No pasa nada :)')
   }
-  const config = {
-    database: process.env.DB_NAME || 'platziverse',
-    username: process.env.DB_USER || 'desarrollador',
-    password: process.env.DB_PASSWORD || '1234560',
-    host: process.env.DB_HOST || 'localhost',
-    dialect: 'postgres',
-    setup: true,
-    logging: s => debug(s)
-  }
+
   await db(config).catch(handleFatalError)
   console.log('Setup DB Success')
   process.exit(0)
